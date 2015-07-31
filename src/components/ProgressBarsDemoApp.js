@@ -9,15 +9,17 @@ var ProgressBar2 = require('components/ProgressBar2.js');
 require('normalize.css');
 require('../styles/main.scss');
 
-var imageURL = require('../images/yeoman.png');
+//var imageURL = require('../images/yeoman.png');
 
 var ProgressBarsDemoApp = React.createClass({
   render: function() {
     return (
       <div className="main">
         <ReactTransitionGroup transitionName="fade">
-          <img src={imageURL} />
           <h1>ProgressBarsDemoApp</h1>
+          <p>By Zac</p>
+          <p>Mobile: 0450340115</p>
+          <p>Email: zacfirst@gmail.com</p>
         </ReactTransitionGroup>
       </div>
     );
