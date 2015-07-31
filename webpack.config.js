@@ -6,6 +6,7 @@
  */
 'use strict';
 var webpack = require('webpack');
+require('bootstrap-sass-loader');
 
 module.exports = {
 

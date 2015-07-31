@@ -2,7 +2,6 @@
 
 var React = require('react/addons');
 
-
 require('styles/ProgressBar.scss');
 
 var ProgressBar = React.createClass({
@@ -54,7 +53,7 @@ var ProgressBar = React.createClass({
   render: function () {
     return (
         <div className="ProgressBar">
-          <h2>Content for ProgressBar</h2>
+          <h2>Prototype 1</h2>
           <progress value="20" max="100" ref="progressBar1"></progress>
           <progress value="50" max="100" ref="progressBar2"></progress>
           <progress value="40" max="100" ref="progressBar3"></progress>

@@ -3,6 +3,7 @@
 var React = require('react/addons');
 var ReactTransitionGroup = React.addons.TransitionGroup;
 var ProgressBar = require('components/ProgressBar.js');
+var ProgressBar2 = require('components/ProgressBar2.js');
 
 // CSS
 require('normalize.css');
@@ -22,7 +23,9 @@ var ProgressBarsDemoApp = React.createClass({
     );
   }
 });
+
 React.render(<ProgressBarsDemoApp />, document.getElementById('content')); // jshint ignore:line
 React.render(<ProgressBar />, document.getElementById('progress-bar')); // jshint ignore:line
+React.render(<ProgressBar2 />, document.getElementById('progress-bar2')); // jshint ignore:line
 
 module.exports = ProgressBarsDemoApp;

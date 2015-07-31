@@ -10,8 +10,12 @@
   "mainInput": "ProgressBarsDemoApp",
   "mainOutput": "main",
   "dependencies": {
+    "and": "0.0.0",
+    "bootstrap-sass": "^3.3.5",
+    "bootstrap-sass-loader": "^1.0.7",
+    "normalize.css": "~3.0.3",
     "react": "0.13.x",
-    "normalize.css": "~3.0.3"
+    "sass-loader": "^1.0.3"
   },
   "devDependencies": {
     "babel": "^5.0.0",
