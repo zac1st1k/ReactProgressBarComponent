@@ -5,7 +5,7 @@ var React = require('react/addons');
 require('styles/ProgressBar2.scss');
 
 var divStyle = {
-  width: '30%'
+  width: '0%'
 };
 var option = '';
 
@@ -53,7 +53,7 @@ var ProgressBar2 = React.createClass({
   render: function () {
     return (
         <div className="ProgressBar2">
-          <h2>Prototype 2 （Responvsive)</h2>
+          <h3>Prototype 2 Responvsive</h3>
           <div className="progress">
             <div className="progress-bar" ref="progressBar1" style={divStyle}></div>
             <span>0%</span>
@@ -72,11 +72,12 @@ var ProgressBar2 = React.createClass({
             <option value="progressBar2" ref="option2">ProgressBar2</option>
             <option value="progressBar3" ref="option3">ProgressBar3</option>
           </select>
-          <input type="button" value="-25" onClick={this.handleClickSub25} />
-          <input type="button" value="-10" onClick={this.handleClickSub10} />
-          <input type="button" value="+10" onClick={this.handleClickAdd10} />
-          <input type="button" value="+25" onClick={this.handleClickAdd25} />
-
+          <div className="button-container">
+            <input type="button" value="-25" onClick={this.handleClickSub25} />
+            <input type="button" value="-10" onClick={this.handleClickSub10} />
+            <input type="button" value="+10" onClick={this.handleClickAdd10} />
+            <input type="button" value="+25" onClick={this.handleClickAdd25} />
+          </div>
         </div>
       );
   }
