@@ -1,6 +1,8 @@
 .ProgressBar {
-  border: 1px dashed #f00;
+  // border: 1px dashed #f00;
+  padding: 0 20px 20px 20px;
   progress {
     display: block;
+    margin: auto;
   }
 }

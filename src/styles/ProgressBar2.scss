@@ -1,16 +1,14 @@
 $primary-color: #337ab7;
 
 .ProgressBar2 {
-  border: 1px dashed #f00;
-  padding: 20px;
+  // border: 1px dashed #f00;
+  background-color: white;
+  padding: 5px 20px 20px 20px;
   text-align: center;
-
-  .button-container {
-    display: inline-block;
-  }
 
   input[type="button"] {
     display: inline-block;
+    width: 20%;
     padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
@@ -21,10 +19,15 @@ $primary-color: #337ab7;
     touch-action: manipulation;
     cursor: pointer;
     user-select: none;
-    border: 1px solid #ccc;
+    border: 1px solid #4cae4c;
     border-radius: 4px;
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #5cb85c;
+    &:hover, &:focus{
+      color: #fff;
+      background-color: #449d44;
+      border-color: #398439;
+    }
     &:not(:last-child){
       margin-right: 10px;
     }
@@ -50,39 +53,50 @@ $primary-color: #337ab7;
   text-align: center;
 
   .progress-bar {
-      float: left;
-      height: 100%;
-      background-color: $primary-color;
-      transition: width .6s ease;
+    float: left;
+    height: 100%;
+    background-color: $primary-color;
+    background-size: 40px 40px;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    transition: .3s ease;
+    background-position: 100% 100%;
   }
 
   span {
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      font-size: 12px;
-      line-height: 20px;
-      color: white;
-      text-shadow: 0 0 5px black;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    text-shadow: 0 0 5px #333;
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
   }
 }
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .ProgressBar2 {
-    text-align: left;
-    select {
-      display: inline-block;
-      width: 30%;
-      margin: 0 20px 20px 0;
+    select, .button-container {
+      margin: 0 auto;
+      width: 510px;
     }
     .button-container {
-      width: 60%;
+      margin: 20px auto 0 auto;
+      width: 510px;
     }
     input[type="button"] {
-      width: 15%;
+      width: 120px;
     }
+  }
+  .clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
   }
 }

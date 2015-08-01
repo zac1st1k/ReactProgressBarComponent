@@ -16,10 +16,7 @@ var ProgressBarsDemoApp = React.createClass({
     return (
       <div className="main">
         <ReactTransitionGroup transitionName="fade">
-          <h1>ProgressBarsDemoApp</h1>
-          <p>By Zac</p>
-          <p>Mobile: 0450340115</p>
-          <p>Email: zacfirst@gmail.com</p>
+          <h1>ProgressBarsDemo</h1>
         </ReactTransitionGroup>
       </div>
     );

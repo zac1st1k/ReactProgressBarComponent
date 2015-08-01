@@ -4,9 +4,7 @@ var React = require('react/addons');
 
 require('styles/ProgressBar2.scss');
 
-var divStyle = {
-  width: '0%'
-};
+var divStyle = [{width: '15%'}, {width: '30%'}, {width: '20%'}];
 var option = '';
 
 var ProgressBar2 = React.createClass({
@@ -27,7 +25,7 @@ var ProgressBar2 = React.createClass({
     bar.style.width = (parseFloat(bar.style.width) <= Math.abs(offset)) && offset < 0
       ? '0' : ((parseFloat(bar.style.width) + offset) + '%');
     bar.parentNode.lastChild.innerText = parseFloat(bar.style.width) + '%';
-    bar.style.backgroundColor = parseFloat(bar.style.width) > 100 ? 'red' : '#337ab7';
+    bar.style.backgroundColor = parseFloat(bar.style.width) > 100 ? '#d9534f' : '#337ab7';
   },
 
   handleClickAdd10: function() {
@@ -52,19 +50,19 @@ var ProgressBar2 = React.createClass({
 
   render: function () {
     return (
-        <div className="ProgressBar2">
+        <div className="ProgressBar2 clearfix">
           <h3>Prototype 2 Responvsive</h3>
           <div className="progress">
-            <div className="progress-bar" ref="progressBar1" style={divStyle}></div>
-            <span>0%</span>
+            <div className="progress-bar progress-bar-striped" ref="progressBar1" style={divStyle[0]}></div>
+            <span>{divStyle[0]}</span>
           </div>
           <div className="progress">
-            <div className="progress-bar" ref="progressBar2" style={divStyle}></div>
-            <span>0%</span>
+            <div className="progress-bar progress-bar-striped" ref="progressBar2" style={divStyle[1]}></div>
+            <span>{divStyle[1]}</span>
           </div>
           <div className="progress">
-            <div className="progress-bar" ref="progressBar3" style={divStyle}></div>
-            <span>0%</span>
+            <div className="progress-bar progress-bar-striped" ref="progressBar3" style={divStyle[2]}></div>
+            <span>{divStyle[2]}</span>
           </div>
 
           <select ref="select">
