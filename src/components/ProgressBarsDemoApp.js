@@ -23,8 +23,8 @@ var ProgressBarsDemoApp = React.createClass({
   }
 });
 
-React.render(<ProgressBarsDemoApp />, document.getElementById('content')); // jshint ignore:line
 React.render(<ProgressBar />, document.getElementById('progress-bar')); // jshint ignore:line
 React.render(<ProgressBar2 />, document.getElementById('progress-bar2')); // jshint ignore:line
+React.render(<ProgressBarsDemoApp />, document.getElementById('content')); // jshint ignore:line
 
 module.exports = ProgressBarsDemoApp;

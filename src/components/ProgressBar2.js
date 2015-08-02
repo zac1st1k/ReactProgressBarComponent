@@ -50,7 +50,7 @@ var ProgressBar2 = React.createClass({
 
   render: function () {
     return (
-        <div className="ProgressBar2 clearfix">
+        <div className="ProgressBar2">
           <h3>Prototype 2 Responvsive</h3>
           <div className="progress">
             <div className="progress-bar progress-bar-striped" ref="progressBar1" style={divStyle[0]}></div>

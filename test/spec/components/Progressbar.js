@@ -5,9 +5,9 @@
 // const TestUtils = React.addons.TestUtils;
 
 import createComponent from 'helpers/createComponent';
-import Progressbar from 'components/Progressbar.js';
+import Progressbar from 'components/ProgressBar.js';
 
-describe('Progressbar', () => {
+describe('ProgressBar', () => {
     let ProgressbarComponent;
 
     beforeEach(() => {
@@ -15,6 +15,6 @@ describe('Progressbar', () => {
     });
 
     it('should have its component name as default className', () => {
-        expect(ProgressbarComponent._store.props.className).toBe('Progressbar');
+        expect(ProgressbarComponent._store.props.className).toBe('ProgressBar');
     });
 });
